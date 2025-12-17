@@ -76,13 +76,17 @@ title = "Your Awesome Post Title"
 date = 2025-01-15
 description = "A brief summary of your post (1-2 sentences)"
 
+[taxonomies]
+tags = ["tutorial", "web-development", "react"]
+
 [extra]
 author = "Your Name"
 author_github = "yourgithub"
+author_linkedin = "yourlinkedin"
 reading_time = 8
+featured = false
 badge = "NEW"
-tags = ["tutorial", "web-development"]
-categories = ["Technical"]
+cover_image = "/images/blog/your-post.jpg"
 +++
 
 # Introduction
@@ -115,10 +119,12 @@ Wrap up your post...
 
 **Tips:**
 - Keep titles clear and descriptive
-- Use tags consistently (check existing posts for common tags)
+- Use tags consistently (check existing posts for common tags: `react`, `python`, `tutorial`, `web-development`)
+- Tags go in `[taxonomies]` section, NOT `[extra]`
 - Include code examples where relevant
 - Proofread before committing!
 - Use `badge = "NEW"` for new posts, `"UPDATED"` for updated ones
+- Add cover images for better social media sharing
 
 ---
 
@@ -148,8 +154,6 @@ venue = "Room 201, Academic Block"
 registration_link = "https://forms.gle/your-form"
 poster = "/images/events/2025/event-poster.jpg"
 badge = "UPCOMING"
-tags = ["workshop", "web-development"]
-categories = ["Technical Workshop"]
 +++
 
 ## About the Event
@@ -297,16 +301,6 @@ Resources are listed in `content/resources/_index.md`.
 ```
 
 3. **Format**: `[Resource Name](URL) - Brief description`
-
-4. **Categories**:
-   - Programming Languages
-   - Web Development
-   - Data Structures & Algorithms
-   - Machine Learning
-   - Tools & Platforms
-   - Interview Prep
-   - Competitive Programming
-   - Free Courses
 
 **Quality Guidelines:**
 - Link to high-quality, reliable resources
@@ -614,10 +608,6 @@ event_date = "January 15, 2025"
 event_time = "4:00 PM"
 venue = "Room 101"
 registration_link = "https://forms.gle/..."
-
-# Taxonomies
-tags = ["tag1", "tag2"]
-categories = ["Category1"]
 +++
 ```
 
@@ -625,23 +615,32 @@ categories = ["Category1"]
 
 ## Important Notes
 
-### Taxonomies (Tags & Categories)
+### Taxonomies (Tags)
 
-**For Blog Posts, Events, and Roadmaps:**
-- Taxonomies (tags and categories) should be placed in the `[extra]` section, NOT in a separate `[taxonomies]` section
-- This is due to how Zola handles taxonomies with our configuration
+**For Blog Posts:**
+- Tags must be placed in the `[taxonomies]` section for filtering to work
+- Use lowercase, hyphenated tags for consistency
+- Check existing tags at `/tags` before creating new ones
 
 **Example:**
 ```markdown
 +++
 title = "My Blog Post"
 date = 2025-01-15
+description = "Brief description"
+
+[taxonomies]
+tags = ["tutorial", "web-development", "python"]
 
 [extra]
-tags = ["tutorial", "web-development"]
-categories = ["Technical"]
+author = "Your Name"
+reading_time = 5
 +++
 ```
+
+**For Events:**
+- Events don't use tags (they're organized by year/type)
+- Use `badge` in `[extra]` for status indicators ("UPCOMING", "COMPLETED")
 
 ### Standalone Pages (About, Team, Alumni, etc.)
 

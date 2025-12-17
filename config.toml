@@ -1,5 +1,6 @@
 # The URL the site will be built for
-# TODO: Update this with your actual domain before deployment
+# IMPORTANT: Update this with your actual domain before deployment
+# Example: "https://ccclub.college.edu" or "https://ccclub.github.io"
 base_url = "https://ccclub.example.com"
 
 # Site title - appears in browser tab and header
@@ -27,9 +28,10 @@ generate_feeds = true
 generate_sitemap = true
 
 # Enable taxonomies for categorizing content
+# Currently using only "tags" for blog posts
+# Categories were removed for simplicity - tags are sufficient
 taxonomies = [
     {name = "tags", feed = true},
-    {name = "categories", feed = true},
 ]
 
 [markdown]
@@ -73,21 +75,22 @@ nav = [
 ]
 
 # GitHub edit URL for "Edit this page" button
-# TODO: Update with your actual repository URL
+# IMPORTANT: Update with your actual repository URL before deployment
+# Example: "https://github.com/YourOrg/cc-website/edit/main"
 edit_url = "https://github.com/your-org/cc-website/edit/main"
 
 # Logo Configuration
 [extra.logo]
 text = "CC Club"                           # Text to show when no logo image
-image_path = ""                            # TODO: Add logo image path (e.g., "images/logo.png")
+image_path = ""                            # Add logo: "images/logo.png" (place in static/images/)
 image_padding = "10px"                     # Padding around logo image
 # dark_image_path = "images/logo-dark.png" # Optional: Different logo for dark theme
 # light_image_path = "images/logo-light.png" # Optional: Different logo for light theme
 
 # Social Media Configuration
 [extra.twitter]
-site = "@your_club_handle"     # TODO: Add your club's Twitter handle
-creator = "@your_club_handle"  # Twitter handle for content creator
+site = "@your_club_handle"     # Update: Your club's Twitter/X handle
+creator = "@your_club_handle"  # Twitter/X handle for content creator
 
 # Theme Configuration
 [extra.theme]

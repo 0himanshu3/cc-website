@@ -34,10 +34,6 @@ learning_outcomes = [
 
 instructor = "Rahul Kumar"
 instructor_bio = "DevOps Engineer at TechCorp, 5 years experience with container technologies"
-
-# Tags for categorization
-tags = ["workshop", "docker", "kubernetes", "devops"]
-categories = ["Workshops"]
 +++
 
 ## Workshop Overview

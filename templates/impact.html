@@ -1,3 +1,56 @@
+{#
+  IMPACT PAGE TEMPLATE (templates/impact.html)
+  
+  Purpose: Showcases club's work, achievements, and community impact
+  URL: /impact/, /impact/2024/, /impact/2025/
+  
+  Data Source: data/impact/YYYY/impact.yaml
+  
+  Structure (impact.yaml):
+  summary: "Brief overview"
+  stats:
+    - label: "Events Conducted"
+      value: "15+"
+      icon: "📅"
+    - ...
+  highlights:
+    - title: "Achievement"
+      description: "Details"
+      image: "/images/..."
+    - ...
+  projects:
+    - name: "Project Name"
+      description: "Details"
+      tech_stack: ["React", "Node.js"]
+      github: "https://..."
+      demo: "https://..."
+    - ...
+  testimonials:
+    - text: "Quote"
+      author: "Name"
+      role: "Position"
+      image: "/images/..."
+    - ...
+  
+  Sections:
+  1. Key Stats: Visual metrics (events, members, PRs, etc.)
+  2. Highlights: Major achievements with images
+  3. Projects: Club/member projects with links
+  4. Testimonials: Member quotes and feedback
+  
+  Frontmatter:
+  +++
+  title = "Impact"
+  template = "impact.html"
+  
+  [extra]
+  data_year = "2024"
+  +++
+  
+  Note: Supports multiple years. Add new year by creating
+  data/impact/YYYY/impact.yaml and corresponding content page.
+#}
+
 {% extends "index.html" %}
 
 {% block content %}

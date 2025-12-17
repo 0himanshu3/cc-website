@@ -1,103 +1,250 @@
-# Content Organization Guide
+# Content Guide
 
-This document explains the organization and structure of content files and data in the CC website.
+**Last Updated:** December 2024 (Post-Refactor)
+
+This guide explains how to add and edit content on the CC Club website. **Most tasks require only editing Markdown or YAML files** - no coding needed!
+
+## Quick Reference
+
+| Task | File to Edit | Difficulty |
+|------|-------------|------------|
+| Add blog post | `content/blog/2025/post-name.md` | ⭐ Easy |
+| Add event | `content/events/2025/event-name.md` | ⭐ Easy |
+| Update team | `data/team.yaml` | ⭐ Easy |
+| Add alumni | `data/alumni.yaml` | ⭐ Easy |
+| Add roadmap | `content/roadmaps/domain.md` | ⭐⭐ Medium |
+| Add resource | `content/resources/topic.md` | ⭐ Easy |
 
 ## Directory Structure
 
 ```
-content/
-├── blog/           # Blog posts
-├── contrihub/      # ContriHub event pages (organized by year)
-├── events/         # Event pages (organized by year)
-├── projects/       # Project showcases
-├── roadmaps/       # Learning roadmaps
-└── team/           # Team member profiles
+content/                   # All Markdown content
+├── _index.md             # Homepage (landing page sections)
+├── about.md              # About CC Club
+├── team.md               # Current team (uses data/team.yaml)
+├── alumni.md             # Alumni directory (uses data/alumni.yaml)
+├── contact.md            # Contact information
+├── blog/                 # Blog posts
+│   ├── _index.md         # Blog listing page
+│   └── 2025/            # Posts by year
+├── events/               # Events
+│   ├── _index.md         # Events listing
+│   └── 2025/, 2026/     # Events by year
+├── contrihub/            # ContriHub event
+│   ├── _index.md
+│   └── 2024/, 2025/
+├── impact/               # Club impact showcase
+├── roadmaps/             # Learning roadmaps
+└── resources/            # Curated resources
 
-data/
-├── alumni.yaml     # All alumni data (single file)
-└── contrihub/      # ContriHub event data (organized by year)
+data/                      # YAML data files
+├── team.yaml             # Team members
+├── alumni.yaml           # Alumni directory
+└── contrihub/            # ContriHub data
     └── 2025/
-        ├── event.yaml         # Main event stats
-        ├── featured.yaml      # Featured contributions
-        ├── recognitions.yaml  # Awards
-        └── stories.yaml       # Success stories
+
+static/                    # Static files
+├── images/               # All images
+│   ├── blog/
+│   ├── events/
+│   ├── team/
+│   └── alumni/
+├── css/custom.css        # Custom styles
+└── js/alumni-search.js   # Alumni filtering logic
 ```
 
-## Alumni Data Management
+## Adding Content
 
-**Location**: `data/alumni.yaml` (single file for all alumni)
+### Blog Posts
 
-### Adding New Alumni (No Coding Required!)
+**File:** `content/blog/2025/your-post-title.md`
 
-1. **Open** `data/alumni.yaml`
-2. **Add** new entry at the top of the `alumni:` list:
+```markdown
++++
+title = "Your Post Title"
+date = 2025-01-15
+description = "Brief description for SEO and previews"
+
+[taxonomies]
+tags = ["tutorial", "web-development", "python"]
+
+[extra]
+author = "Your Name"
+author_role = "Your Role"
+author_github = "yourgithub"
+author_linkedin = "yourlinkedin"
+reading_time = 5  # minutes
+featured = false
+badge = "NEW"
+cover_image = "/images/blog/your-post.jpg"
++++
+
+Your content here in Markdown...
+
+## Headings work
+
+- Lists work
+- Code blocks work
+
+\```python
+print("Hello World")
+\```
+```
+
+**Tags:** Use existing tags when possible. Browse [/tags](/tags) to see all tags. Tags must be in `[taxonomies]` section for filtering to work.
+
+**Images in posts:**
+```markdown
+![Alt text](/images/blog/2025/your-image.jpg)
+```
+
+### Events
+
+**File:** `content/events/2025/event-name.md`
+
+```markdown
++++
+title = "Event Name"
+date = 2025-03-15  # Event date
+description = "Brief event description"
+
+[extra]
+location = "Venue Name"
+registration_link = "https://forms.google.com/..."
+badge = "UPCOMING"  # Optional: UPCOMING, COMPLETED, etc.
++++
+
+Event details, schedule, speakers, etc.
+
+## Event Schedule
+
+- 10:00 AM - Registration
+- 11:00 AM - Workshop
+```
+
+**Automatic categorization:** Events are automatically marked as "Upcoming" or "Past" based on the date.
+
+### Team Members
+
+**File:** `data/team.yaml`
+
+```yaml
+# Faculty Advisors
+faculty:
+  - name: "Prof. Name"
+    designation: "Professor"
+    department: "Department Name"
+    bio: "Brief bio"
+    image: "/images/team/prof-name.jpg"
+
+# Club Coordinators
+coordinators:
+  - name: "Student Name"
+    role: "President"  # or "Vice President", "Secretary"
+    bio: "Brief bio"
+    image: "/images/team/student-name.jpg"
+    linkedin: "https://linkedin.com/in/username"
+    github: "https://github.com/username"
+
+# Executive Members
+executives:
+  - name: "Student Name"
+    role: "Web Team Lead"  # or "Events Head", "Content Lead"
+    image: "/images/team/student-name.jpg"
+    linkedin: "https://linkedin.com/in/username"
+    github: "https://github.com/username"
+```
+
+**Images:**
+1. Add photo to `static/images/team/yourname.jpg`
+2. Reference: `image: "/images/team/yourname.jpg"`
+3. Recommended size: 400x400px, square crop
+
+### Alumni
+
+**File:** `data/alumni.yaml`
 
 ```yaml
 alumni:
-  # Add new alumni here (newest first)
   - name: "Full Name"
-    batch: "2024-2028"              # Batch years
-    graduation_year: 2028           # Graduation year
-    current_role: "Software Engineer"  # Job title
-    company: "Google"               # Employer
-    domain: "Backend Development"   # Field/Domain
-    location: "City, Country"       # Location
-    linkedin: "https://linkedin.com/in/username"  # Optional
-    github: "https://github.com/username"         # Optional
-    image: "/images/alumni/name.jpg"              # Optional
-    message: "Your advice or testimonial"         # Optional
-  
-  # ... existing alumni ...
+    batch: "2021-2025"
+    graduation_year: 2025
+    current_role: "Software Engineer"
+    company: "Google"
+    domain: "Backend Development"  # See domains list below
+    location: "Bangalore, India"
+    image: "/images/alumni/yourname.jpg"
+    linkedin: "https://linkedin.com/in/username"
+    github: "https://github.com/username"
+    message: "Optional advice for juniors"
 ```
 
-3. **Validate**: Run `python3 scripts/validate-data.py`
-4. **Build**: Run `zola build`
+**Valid domains:**
+- Backend Development
+- Frontend Development
+- Full Stack
+- Machine Learning
+- Natural Language Processing
+- Computer Vision
+- Cloud Infrastructure
+- Distributed Systems
+- Product Management
+- Documentation
+- Security
+- Fintech
+- Creative Cloud
 
-**That's it!** Alumni automatically appears on website with search/filters working.
+**Note:** Filters are automatically generated from the data - no need to update templates!
 
-### Required vs Optional Fields
+### Roadmaps
 
-**Required**:
-- `name`, `batch`, `graduation_year`
+**File:** `content/roadmaps/domain-name.md`
 
-**Optional**:
-- `current_role`, `company`, `domain`, `location`, `image`, `linkedin`, `github`, `message`
-
-**Important**: No template or code changes needed when adding alumni!
-
-## Year-Based Organization
-
-### Events (`content/events/`)
-
-Events are organized by calendar year for better long-term maintainability:
-
-```
-events/
-├── _index.md       # Events section landing page
-├── 2025/           # Events happening in 2025
-│   ├── _index.md
-│   └── event-name.md
-└── 2024/           # Events from 2024
-    ├── _index.md
-    └── event-name.md
-```
-
-**Why year-based?**
-- Prevents accumulation in "past" folder
-- Easier to find events from specific years
-- Natural archive organization
-- Scales better over 5+ years
-
-**Creating a new event:**
-
-1. Determine the event year (2025, 2026, etc.)
-2. Create or use existing year folder: `content/events/YYYY/`
-3. Create event file: `content/events/YYYY/event-name.md`
-4. Use this frontmatter template:
-
-```toml
+```markdown
 +++
-title = "Event Name"
+title = "Domain Name Roadmap"
+description = "Learning path for Domain Name"
+weight = 1
++++
+
+# Domain Name Roadmap
+
+## Phase 1: Beginner (0-3 months)
+- Topic 1
+- Topic 2
+
+## Phase 2: Intermediate (3-6 months)
+- Topic 3
+- Topic 4
+
+## Projects
+1. Project idea 1
+2. Project idea 2
+
+## Resources
+- [Resource Name](URL)
+```
+
+### Resources
+
+**File:** `content/resources/topic.md`
+
+```markdown
++++
+title = "Topic Name"
+description = "Resources for learning Topic"
+weight = 1
++++
+
+## Courses
+- [Course Name](URL) - Description
+
+## Books
+- Book Name by Author - Description
+
+## Practice
+- [Platform Name](URL) - Description
+```
 description = "Brief event description"
 date = 2025-03-15  # Event date
 template = "contrihub-event.html"  # Optional: custom template
@@ -227,9 +374,13 @@ title = "..."         # Required
 date = YYYY-MM-DD    # Required
 description = "..."   # Recommended
 
-[extra.taxonomies]   # Optional
+[taxonomies]         # For tags (enables filtering)
 tags = ["tag1", "tag2"]
-authors = ["author1"]
+
+[extra]              # For custom fields
+author = "Name"
+featured = true
+badge = "NEW"
 ```
 
 ### Using [extra] Section

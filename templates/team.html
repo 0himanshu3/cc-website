@@ -1,3 +1,31 @@
+{#
+  TEAM PAGE TEMPLATE (templates/team.html)
+  
+  Purpose: Displays current club members organized by role
+  URL: /team/
+  
+  Data Source: data/team.yaml
+  
+  Structure:
+  team:
+    faculty:
+      - name, designation, image, email, etc.
+    coordinators:
+      - name, year, branch, role, image, github, linkedin, etc.
+    executives:
+      - name, year, branch, domain, image, github, linkedin, etc.
+  
+  Features:
+  - Three sections: Faculty Advisors, Coordinators, Core Team
+  - Grid layout with profile cards
+  - Shows role, year, branch for students
+  - Social links (GitHub, LinkedIn, email)
+  - Responsive cards with hover effects
+  
+  Note: All data is loaded from YAML - no hardcoded team members.
+  To add/update team members, edit data/team.yaml only.
+#}
+
 {% extends "page.html" %}
 
 {% block content %}

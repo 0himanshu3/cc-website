@@ -28,8 +28,6 @@ winners = [
     { position = "3rd", team = "HealthHackers", project = "MediTrack", prize = "₹20,000" }
 ]
 
-tags = ["hackathon", "competition", "completed", "2025"]
-categories = ["Hackathons", "Past Events"]
 +++
 
 ## Event Summary

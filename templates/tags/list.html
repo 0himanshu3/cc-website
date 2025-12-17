@@ -1,3 +1,25 @@
+{#
+  TAGS LIST TEMPLATE (templates/tags/list.html)
+  
+  Purpose: Displays all available tags with post counts
+  URL: /tags/
+  
+  Context Variables:
+  - taxonomy: The taxonomy object (name="tags")
+  - terms: Array of tag objects with .name, .permalink, .pages
+  - config: Site configuration
+  - lang: Current language code
+  
+  Features:
+  - Shows grid of all tags
+  - Displays post count for each tag
+  - Links to individual tag pages
+  - Uses DaisyUI card components
+  
+  Note: This is a standalone template (doesn't extend index.html)
+  because taxonomy pages need custom head/body structure.
+#}
+
 {% import "macros/head.html" as macros_head %}
 {% import "macros/search.html" as macros_search %}
 {% import "macros/header.html" as macros_header %}

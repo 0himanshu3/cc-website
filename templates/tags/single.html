@@ -1,3 +1,28 @@
+{#
+  SINGLE TAG TEMPLATE (templates/tags/single.html)
+  
+  Purpose: Displays all blog posts for a specific tag
+  URL: /tags/{tag-name}/
+  Example: /tags/react/, /tags/python/
+  
+  Context Variables:
+  - taxonomy: The taxonomy object (name="tags")
+  - term: Current tag object with .name, .permalink, .pages
+  - term.pages: Array of pages tagged with this term
+  - config: Site configuration
+  - lang: Current language code
+  
+  Features:
+  - Breadcrumb navigation (Blog > Tags > {tag})
+  - Lists all posts with this tag
+  - Shows post metadata (date, author, reading time)
+  - Displays tags for each post (for cross-navigation)
+  - Card-based layout with hover effects
+  
+  Note: This is a standalone template for better control over
+  tag page structure and metadata.
+#}
+
 {% import "macros/head.html" as macros_head %}
 {% import "macros/search.html" as macros_search %}
 {% import "macros/header.html" as macros_header %}

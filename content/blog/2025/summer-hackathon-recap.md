@@ -3,6 +3,9 @@ title = "Summer Hackathon 2025: 48 Hours of Innovation and Collaboration"
 date = 2025-08-25
 description = "A detailed recap of our Summer Hackathon 2025 - 150 participants, 30 teams, and amazing projects built in 48 hours."
 
+[taxonomies]
+tags = ["hackathon", "events", "community", "projects"]
+
 [extra]
 author = "Priya Mehra"
 author_role = "Senior Coordinator, CC Club"
@@ -12,8 +15,6 @@ cover_image = "/images/blog/summer-hackathon-2025.jpg"
 reading_time = 7
 featured = true
 badge = "NEW"
-tags = ["hackathon", "events", "community", "projects"]
-categories = ["Event Reports"]
 +++
 
 ## Overview

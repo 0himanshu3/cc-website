@@ -40,10 +40,6 @@ prizes = [
 
 # Sponsors (if applicable)
 sponsors = ["TechCorp", "CloudServe", "DevTools Inc."]
-
-# Tags for categorization
-tags = ["hackathon", "coding", "competition", "team-event"]
-categories = ["Hackathons"]
 +++
 
 ## About the Event

@@ -13,6 +13,10 @@ date = 2025-12-15
 # Keep it under 160 characters for best SEO
 description = "Learn React Hooks from scratch with practical examples. This beginner-friendly guide covers useState, useEffect, useContext, and custom hooks."
 
+# Tags: specific technologies, concepts (use lowercase, hyphenated)
+[taxonomies]
+tags = ["react", "javascript", "web-development", "frontend", "tutorial"]
+
 # Author information
 # TODO: Replace with actual author details
 [extra]
@@ -36,11 +40,6 @@ featured = false
 # Badge for visual indicator
 badge = "NEW"
 
-# Tags: specific technologies, concepts (use lowercase, hyphenated)
-tags = ["react", "javascript", "web-development", "frontend", "tutorial"]
-
-# Categories: broader topics (use Title Case)
-categories = ["Web Development", "Tutorials"]
 +++
 
 <!-- 

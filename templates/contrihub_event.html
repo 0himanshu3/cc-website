@@ -1,3 +1,38 @@
+{#
+  CONTRIHUB EVENT TEMPLATE (templates/contrihub_event.html)
+  
+  Purpose: Individual ContriHub event page with full details
+  URL: /contrihub/2024/, /contrihub/2025/, etc.
+  
+  Data Sources (for year YYYY):
+  - data/contrihub/YYYY/event.yaml (event details, stats)
+  - data/contrihub/YYYY/featured.yaml (featured projects)
+  - data/contrihub/YYYY/recognitions.yaml (awards, recognitions)
+  - data/contrihub/YYYY/stories.yaml (participant testimonials)
+  
+  Sections:
+  1. Hero: Event title, dates, status, key stats
+  2. Event Details: Description, dates, registration
+  3. Statistics: PRs, participants, repos, etc.
+  4. Featured Projects: Highlight best contributions
+  5. Recognitions: Top contributors, awards
+  6. Stories: Participant testimonials
+  7. Timeline: Event phases/milestones
+  
+  Frontmatter (in content/contrihub/YYYY/_index.md):
+  +++
+  title = "ContriHub 2025"
+  template = "contrihub_event.html"
+  
+  [extra]
+  data_year = "2025"
+  status = "upcoming"  # current/upcoming/completed
+  +++
+  
+  Note: All event data is in YAML files - template just renders it.
+  This allows easy updates without touching template code.
+#}
+
 {% extends "index.html" %}
 
 {% block content %}

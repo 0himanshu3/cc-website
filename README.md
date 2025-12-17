@@ -1,20 +1,19 @@
 # CC Club Website
 
-Welcome to the official website of the Computer Coding Club, LNMIIT! This is a modern, fast, and easy-to-maintain static website built with [Zola](https://www.getzola.org/) and the [Goyo](https://github.com/jeevangantait/goyo) theme.
+Welcome to the official website of the Computer Coding Club! This is a modern, fast, and maintainable static website built with [Zola](https://www.getzola.org/) static site generator and the [Goyo](https://github.com/hahwul/goyo) theme.
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 
-- **Zola** (Static Site Generator)
+- **Zola** (Static Site Generator) - Version 0.17.0 or higher
   - Download: [https://www.getzola.org/documentation/getting-started/installation/](https://www.getzola.org/documentation/getting-started/installation/)
-  - Version: 0.17.0 or higher
 
-### Installation
+### Local Development
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/ccc-lnmiit/cc-website.git
+   git clone https://github.com/your-org/cc-website.git
    cd cc-website
    ```
 
@@ -38,155 +37,216 @@ Welcome to the official website of the Computer Coding Club, LNMIIT! This is a m
 zola build
 ```
 
-This generates the static site in the `public/` directory.
+The static site will be generated in the `public/` directory.
 
 ## 📁 Project Structure
 
 ```
 cc-website/
-├── config.toml              # Site configuration
-├── content/                 # All content (markdown files)
-│   ├── _index.md           # Homepage
+├── config.toml              # Site configuration (nav, theme settings, etc.)
+├── content/                 # All content (Markdown files)
+│   ├── _index.md           # Homepage with landing page sections
+│   ├── about.md            # About CC Club
+│   ├── team.md             # Current team (uses data/team.yaml)
+│   ├── alumni.md           # Alumni directory (uses data/alumni.yaml)
+│   ├── contact.md          # Contact information
 │   ├── blog/               # Blog posts
-│   │   └── 2025/
+│   │   ├── _index.md       # Blog listing page
+│   │   └── 2025/          # Blog posts organized by year
 │   ├── events/             # Event pages
-│   │   ├── upcoming/
-│   │   └── past/
-│   ├── contrihub/          # ContriHub pages
-│   │   └── 2025/
-│   ├── projects/           # Project showcase
-│   ├── roadmaps/           # Learning roadmaps
-│   ├── resources/          # Curated resources
-│   ├── about.md            # About page
-│   ├── team.md             # Team page
-│   └── alumni.md           # Alumni directory
-├── data/                    # YAML data files
-│   ├── team.yaml           # Team member data
-│   ├── alumni.yaml         # Alumni data
-│   └── contrihub/          # ContriHub data
-│       ├── 2025.yaml
-│       ├── 2025-recognitions.yaml
-│       ├── 2025-featured.yaml
-│       └── 2025-stories.yaml
-├── static/                  # Static assets
+│   │   ├── _index.md       # Events listing
+│   │   └── 2024/, 2025/   # Events by year
+│   ├── contrihub/          # ContriHub event pages
+│   │   ├── _index.md       # ContriHub overview
+│   │   ├── how-to-participate.md
+│   │   └── 2024/, 2025/, 2026/  # ContriHub events by year
+│   ├── impact/             # Club impact showcase
+│   ├── roadmaps/           # Learning roadmaps (DSA, Web Dev, etc.)
+│   └── resources/          # Curated learning resources
+├── data/                    # YAML data files for team, alumni, etc.
+│   ├── team.yaml           # Team member information
+│   ├── alumni.yaml         # Alumni directory data
+│   ├── README.md           # Data file documentation
+│   └── contrihub/          # ContriHub-specific data
+│       └── 2024/, 2025/, 2026/
+├── static/                  # Static assets (copied as-is to public/)
 │   ├── css/
-│   │   └── custom.css      # Custom styles
+│   │   └── custom.css      # Custom styles (optional)
 │   ├── js/
-│   │   └── alumni-search.js
-│   └── images/             # All images
-├── templates/               # Custom HTML templates
-│   ├── alumni.html         # Alumni page template
-│   └── contrihub-event.html # ContriHub event template
+│   │   └── alumni-search.js # Alumni search/filter logic
+│   └── images/             # All images (team, alumni, blog, etc.)
+├── templates/               # Custom templates (only where needed)
+│   ├── alumni.html         # Alumni page with server-side rendering
+│   ├── blog.html           # Blog listing with search
+│   ├── team.html           # Team page rendering
+│   ├── events.html         # Events listing (upcoming/past)
+│   ├── contrihub_index.html # ContriHub landing
+│   ├── contrihub_event.html # Individual ContriHub event
+│   ├── impact.html         # Impact showcase
+│   └── tags/               # Taxonomy templates
+│       ├── list.html       # All tags listing (/tags/)
+│       └── single.html     # Posts for a tag (/tags/react/)
 ├── themes/
-│   └── goyo/               # Goyo theme (git submodule)
-├── CONTRIBUTING.md          # Contribution guide
+│   └── goyo/               # Goyo theme (git submodule - DO NOT EDIT)
+├── scripts/
+│   └── validate-data.py    # Validates YAML data files
+├── CONTRIBUTING.md          # How to contribute
+├── CONTENT_GUIDE.md         # Content creation guide
 └── README.md               # This file
 ```
 
 ## ✨ Features
 
-### Built-in Features (via Goyo Theme)
-- ⚡ Lightning-fast static site generation
-- 🌙 Dark mode support
-- 📱 Fully responsive design
-- 🔍 Built-in search functionality
-- 📊 Mermaid diagram support
-- 💬 Comment system integration (optional)
-- 🎨 DaisyUI components
+### Core Features
+- ⚡ Lightning-fast static site generation with Zola
+- 🏷️ **Tag System**: Filter blog posts by technology/topic
+- 📄 **Pagination**: Automatic pagination for blog (10 posts per page)
+- 🔍 **Search**: Full-text search across all content
+- 📱 **Responsive**: Mobile-first design with DaisyUI
+- 🎨 **Dark Mode**: Automatic theme switching
+- 👥 **Dynamic Data**: Team and alumni from YAML files
+- 📊 **SSR Filtering**: Server-side rendering for better performance
+
+### Powered by Goyo Theme
+- ⚡ Minimalist documentation-focused design
+- 🌙 Dark/light mode with customizable themes
+- 📱 Fully responsive mobile-first design
+- 🔍 Built-in client-side search
+- 📊 Rich shortcodes (alerts, badges, collapse, gallery, etc.)
+- 💬 Comment system support (Giscus/Utterances)
+- 🎨 DaisyUI + TailwindCSS styling
 - 📝 Syntax highlighting for code blocks
 - 🔗 Social sharing buttons
-- ♿ Accessible design
+- ♿ Accessible markup
 
-### Custom Features
-- 👥 Alumni directory with search and filters
-- 🎯 ContriHub event showcase with recognitions and stories
-- 📚 Comprehensive learning roadmaps
-- 📝 Blog with categories and tags
-- 📅 Event management (upcoming/past)
-- 💼 Project showcase
-- 📖 Curated resource library
+### Custom CC Club Features
+- 👥 **Alumni Directory** - Server-side rendered with client-side filtering
+- 🎯 **ContriHub Showcase** - Annual open source contribution event
+- 📚 **Learning Roadmaps** - Structured paths for different domains
+- 📝 **Blog** - Tagged articles with search functionality
+- 📅 **Event Management** - Automatic upcoming/past categorization
+- 💡 **Impact Stories** - Showcase club achievements
+- 📖 **Resource Library** - Curated learning materials
 
 ## 📝 Content Management
 
-### Adding Content
+### For Non-Developers
 
-**Blog Posts:**
-```bash
-# Create new blog post
-touch content/blog/2025/your-post-title.md
-```
+Most content updates require **only editing Markdown or YAML files** - no coding needed!
 
-**Events:**
-```bash
-# Add upcoming event
-touch content/events/2025/event-name.md
-```
+#### Adding a Blog Post
 
-**Roadmaps:**
-```bash
-# Add new roadmap
-touch content/roadmaps/domain-name.md
-```
+1. Create a new file: `content/blog/2025/your-post-title.md`
+2. Add frontmatter:
+   ```markdown
+   +++
+   title = "Your Post Title"
+   date = 2025-01-15
+   description = "Brief description"
+   
+   [taxonomies]
+   tags = ["Tutorial", "Web Dev"]
+   +++
+   
+   Your content here...
+   ```
+3. Commit and push
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions on adding each type of content.
+#### Adding a Team Member
 
-### Updating Data
+1. Open `data/team.yaml`
+2. Add entry under appropriate section (faculty/coordinators/executives):
+   ```yaml
+   - name: "Your Name"
+     role: "Your Role"
+     image: "/images/team/yourname.jpg"
+     bio: "Short bio"
+     linkedin: "https://linkedin.com/in/yourname"
+     github: "https://github.com/yourname"
+   ```
+3. Add your photo to `static/images/team/`
 
-**Team Members:**
-- Edit `data/team.yaml`
-- Add photos to `static/images/team/`
+#### Adding an Alumni
 
-**Alumni:**
-- Edit `data/alumni.yaml`
-- Add photos to `static/images/alumni/`
+1. Open `data/alumni.yaml`
+2. Add entry:
+   ```yaml
+   - name: "Your Name"
+     batch: "2021-2025"
+     graduation_year: 2025
+     current_role: "Software Engineer"
+     company: "Company Name"
+     domain: "Backend Development"
+     location: "City, Country"
+     image: "/images/alumni/yourname.jpg"
+     linkedin: "https://linkedin.com/in/yourname"
+     github: "https://github.com/yourname"
+     message: "Optional advice for juniors"
+   ```
+3. Add your photo to `static/images/alumni/`
 
-**ContriHub:**
-- Edit files in `data/contrihub/`
-- Follow existing YAML structure
+#### Adding an Event
+
+1. Create: `content/events/2025/event-name.md`
+2. Add frontmatter:
+   ```markdown
+   +++
+   title = "Event Name"
+   date = 2025-03-15
+   description = "Event description"
+   
+   [extra]
+   location = "Venue"
+   registration_link = "https://..."
+   +++
+   
+   Event details...
+   ```
+
+See [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for detailed instructions.
 
 ## 🎨 Customization
 
-### Styling
+### Theme Settings
 
-Custom styles go in `static/css/custom.css`. This file includes:
-- Extensive comments explaining each section
-- Examples for common customizations
-- Instructions for the design team
+Edit `config.toml` to customize:
 
-**Common customizations:**
-```css
-/* Change primary color */
-:root {
-  --primary-color: #your-color;
-}
+```toml
+[extra.theme]
+colorset = "dark"              # "dark" or "light"
+brightness = "normal"          # "darker", "normal", "lighter"
+disable_toggle = false         # Hide theme toggle
 
-/* Customize fonts */
-body {
-  font-family: 'Your Font', sans-serif;
-}
+[extra.logo]
+text = "CC Club"
+image_path = "images/logo.png" # Add your logo
+
+[extra.sidebar]
+expand_depth = 2               # Sidebar auto-expansion depth
 ```
 
-### Configuration
+### Custom Styling
 
-Edit `config.toml` to modify:
-- Site title and description
-- Navigation menu
-- Theme settings (logo, colors, sidebar)
-- Social links
-- Analytics (optional)
+Add custom CSS in `static/css/custom.css`:
+- File includes helpful comments and examples
+- Extends Goyo theme without overriding
+- Uses DaisyUI utilities
 
 ### Templates
 
-Custom templates are in `templates/`:
-- `alumni.html` - Alumni directory page
-- `contrihub-event.html` - ContriHub event pages
+Custom templates (in `templates/`) are used only where Goyo doesn't provide the functionality:
 
-To use a custom template, add to frontmatter:
-```markdown
-+++
-template = "alumni.html"
-+++
-```
+| Template | Purpose | Extends Goyo? |
+|----------|---------|---------------|
+| `alumni.html` | Alumni directory with filters | ✅ Yes (`page.html`) |
+| `blog.html` | Blog listing with search | ✅ Yes (`index.html`) |
+| `team.html` | Team member cards from YAML | ✅ Yes (`page.html`) |
+| `events.html` | Event listing (upcoming/past) | ✅ Yes (`index.html`) |
+| `contrihub_*.html` | ContriHub pages | ✅ Yes |
+| `impact.html` | Impact showcase | ✅ Yes |
+| `taxonomy_*.html` | Tag pages (required) | ✅ Yes |
+
+**Important:** These templates extend Goyo - they don't replace it. Goyo updates will still apply.
 
 ## 🚀 Deployment
 
@@ -250,118 +310,182 @@ jobs:
 
 ## 🛠️ Development
 
+### Architecture
+
+**This site follows the Zola + Goyo best practices:**
+
+1. **Content in Markdown** - `content/` directory
+2. **Data in YAML** - `data/` directory  
+3. **Styling via DaisyUI/Tailwind** - Minimal custom CSS
+4. **Templates extend Goyo** - Not replace
+5. **Server-side rendering** - JavaScript only for interactivity
+
+**What makes this maintainable:**
+- Non-developers can edit Markdown/YAML without touching code
+- Custom templates are minimal and well-documented
+- Goyo theme updates are automatically inherited
+- Static site = fast, secure, cheap hosting
+
+### Local Development
+
+```bash
+# Clone with submodules
+git clone --recurse-submodules https://github.com/your-org/cc-website.git
+
+# Or if already cloned
+git submodule update --init --recursive
+
+# Start dev server
+zola serve
+
+# Build for production
+zola build
+
+# Validate content
+zola check
+```
+
 ### Recommended Tools
 
 - **VS Code** with extensions:
   - Markdown All in One
   - YAML
   - Better TOML
-  - Zola Syntax Highlighting (if available)
 
-- **Git GUI** (optional):
-  - GitHub Desktop
+- **Optional Git GUI**:
+  - GitHub Desktop (simplest)
   - GitKraken
   - SourceTree
-
-### Testing
-
-**Local testing:**
-```bash
-zola serve
-```
-
-**Build testing:**
-```bash
-zola build
-```
-
-**Check for errors:**
-```bash
-zola check
-```
 
 ### Common Tasks
 
 **Adding images:**
 ```bash
-# Place in appropriate directory
-cp image.jpg static/images/blog/2025/
+# Place in static/images/
+cp photo.jpg static/images/team/yourname.jpg
 
-# Reference in markdown
-![Description](images/blog/2025/image.jpg)
+# Reference in markdown or YAML
+image: "/images/team/yourname.jpg"
 ```
 
-**Preview drafts:**
+**Working with drafts:**
 ```markdown
 +++
-draft = true
+draft = true  # Won't appear in production
 +++
 ```
 
-Use `zola serve --drafts` to see draft content.
+View drafts: `zola serve --drafts`
 
-## 📚 Documentation
+**Testing before deploy:**
+```bash
+# Build and check for errors
+zola build
 
-- **Zola Docs**: [https://www.getzola.org/documentation/](https://www.getzola.org/documentation/)
-- **Goyo Theme**: [https://github.com/jeevangantait/goyo](https://github.com/jeevangantait/goyo)
-- **DaisyUI**: [https://daisyui.com/](https://daisyui.com/)
-- **Markdown Guide**: [https://www.markdownguide.org/](https://www.markdownguide.org/)
+# Check internal links
+zola check
+
+# Serve production build locally
+cd public && python3 -m http.server
+```
+
+## 🚀 Deployment
+
+### Before First Deployment
+
+Update `config.toml`:
+```toml
+base_url = "https://your-actual-domain.com"
+edit_url = "https://github.com/your-org/cc-website/edit/main"
+```
+
+### Deployment Options
+
+**GitHub Pages (Main):**
+1. Push to main branch
+2. GitHub Actions auto-deploys
+3. See `.github/workflows/deploy.yml`
+
+**Netlify:**
+- Build: `zola build`
+- Publish: `public/`
+
+**Vercel/Cloudflare Pages:**
+- Framework: Other
+- Build: `zola build`
+- Output: `public/`
+
+## 📚 Documentation & Resources
+
+- [Zola Documentation](https://www.getzola.org/documentation/)
+- [Goyo Theme Docs](https://github.com/hahwul/goyo)
+- [DaisyUI Components](https://daisyui.com/)
+- [CONTENT_GUIDE.md](CONTENT_GUIDE.md) - How to add content
+- [CONTRIBUTING.md](CONTRIBUTING.md) - Contribution workflow
+- [data/README.md](data/README.md) - Data file documentation
 
 ## 🤝 Contributing
 
 We welcome contributions from all club members!
 
-**Quick contribution:**
-1. Fork the repository
-2. Make your changes
-3. Create a Pull Request
+**For non-developers:**
+- Edit Markdown files for content
+- Update YAML files for team/alumni
+- Fix typos and improve documentation
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines on:
-- Adding blog posts, events, and content
-- Updating team and alumni data
-- Working with Git
+**For developers:**
+- Improve templates
+- Add features
+- Fix bugs
+- Enhance styling
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+- Step-by-step contribution guide
+- Content guidelines
+- Git workflow
 - Pull request process
-- Code of conduct
+- Code style
 
-## 👥 Team
+## 👥 Maintainers
 
-**Web Team 2024-25:**
-- **Lead**: [Name] - [GitHub]
-- **Design**: [Name] - [GitHub]
-- **Content**: [Name] - [GitHub]
-- **Maintainer**: Shanu Kumawat - [@your-github]
+**Current:** Shanu Kumawat ([@Shanu-Kumawat](https://github.com/Shanu-Kumawat))
 
-See [Team Page](content/team.md) for full team.
+**Web Team:** See [Team Page](/team)
+
+**Alumni Maintainers:** We encourage past web team members to continue contributing!
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT License - see [LICENSE](LICENSE)
 
-The Goyo theme is licensed under the MIT License by its original authors.
+**Goyo Theme:** MIT License by [hahwul](https://github.com/hahwul/goyo)
 
-## 🙋 Support
+## 🙋 Support & Help
 
 **Need help?**
 
-1. Check [CONTRIBUTING.md](CONTRIBUTING.md) for common questions
-2. Search existing [GitHub Issues](https://github.com/ccc-lnmiit/cc-website/issues)
-3. Ask on club Discord server
-4. Open a new issue on GitHub
-5. Contact web team directly
+1. 📖 Read [CONTENT_GUIDE.md](CONTENT_GUIDE.md) for content questions
+2. 🔍 Search [GitHub Issues](https://github.com/your-org/cc-website/issues)
+3. 💬 Ask on club Discord/Slack
+4. 🐛 Open a new issue for bugs
+5. ✉️ Contact web team
 
-## 📈 Roadmap
+## 📊 Project Status
 
-**Current Status:** ~80% Complete ✅
+**Current Version:** 2.0 (Post-Refactor)
 
-**Completed:**
-- ✅ Site structure and configuration
-- ✅ All content pages created
-- ✅ Blog section with examples
-- ✅ Event pages
-- ✅ ContriHub section
-- ✅ Roadmaps
-- ✅ Alumni directory
-- ✅ Team page
+**Recent Updates (December 2024):**
+- ✅ Removed unnecessary template overrides
+- ✅ Fixed blog taxonomy filtering
+- ✅ Refactored alumni page to SSR
+- ✅ Simplified JavaScript (300 → 200 lines)
+- ✅ Removed unused categories taxonomy
+- ✅ Updated all documentation
+
+**Maintenance:**
+- Regular: Content updates (blog, events, team)
+- Occasional: Goyo theme updates (git submodule)
+- Rare: Template modifications (only if needed)
 - ✅ Custom templates
 - ✅ YAML data structure
 - ✅ Documentation
@@ -396,6 +520,6 @@ The Goyo theme is licensed under the MIT License by its original authors.
 
 ---
 
-**Made with ❤️ by CC Club, LNMIIT**
+**Made with ❤️ by CC Club, Mnnit**
 
 **Last Updated:** January 2025

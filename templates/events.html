@@ -1,3 +1,53 @@
+{#
+  EVENTS LISTING TEMPLATE (templates/events.html)
+  
+  Purpose: Lists all club events sorted by date (upcoming first, then past)
+  URL: /events/
+  
+  Directory Structure:
+  content/events/
+    ├── _index.md (this page)
+    ├── 2024/
+    │   ├── _index.md
+    │   └── event-name.md
+    ├── 2025/
+    └── 2026/
+  
+  Context Variables:
+  - section: The events section
+  - section.subsections: Array of year folders (2024/, 2025/, etc.)
+  
+  Features:
+  1. Automatic date-based sorting (newest first)
+  2. Status-based grouping:
+     - Upcoming Events (start_date > today)
+     - Past Events (start_date <= today)
+  3. Event cards show:
+     - Title, date, duration, venue
+     - Event type badge (hackathon/workshop/etc.)
+     - Status badge (UPCOMING/COMPLETED)
+     - Brief description
+  4. Responsive grid layout
+  
+  Event Frontmatter:
+  +++
+  title = "Event Name"
+  date = 2025-12-20  # For Zola sorting
+  description = "..."
+  
+  [extra]
+  start_date = "2025-12-20"
+  end_date = "2025-12-22"  # Optional
+  venue = "Location"
+  event_type = "hackathon"
+  status = "upcoming"
+  badge = "UPCOMING"
+  +++
+  
+  Note: This template automatically scans all year subfolders,
+  so new years (2026, 2027, etc.) are automatically included.
+#}
+
 {% extends "index.html" %}
 
 {% block header %}

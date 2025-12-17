@@ -2,6 +2,20 @@
 """
 Data Validation Script for CC Website
 Validates YAML data files and markdown frontmatter for consistency and required fields.
+
+Usage: python3 scripts/validate-data.py
+
+Validates:
+- Alumni data (data/alumni.yaml)
+- Event pages (content/events/**/*.md)
+- Blog posts (content/blog/**/*.md)
+- ContriHub pages (content/contrihub/**/*.md)
+
+Checks:
+- Required fields present
+- Tags in [taxonomies] section (not [extra])
+- Date field consistency
+- Valid YAML/TOML syntax
 """
 
 import sys
@@ -79,20 +93,58 @@ def validate_frontmatter(file_path):
         
         frontmatter = parts[1].strip()
         
-        # Check for duplicate date fields
-        if 'date =' in frontmatter and 'start_date =' in frontmatter:
-            errors.append(f"{file_path}: Duplicate date fields (date and start_date)")
+        # Check for duplicate date fields (events can use either date OR start_date+end_date)
+        # Use word boundaries to match exact 'date =' not 'start_date =' or 'end_date ='
+        import re
+        has_date_field = re.search(r'\bdate\s*=\s*(\d{4}-\d{2}-\d{2})', frontmatter)
+        has_start_date_field = re.search(r'\bstart_date\s*=\s*["\']?(\d{4}-\d{2}-\d{2})', frontmatter)
         
-        # Check for [extra] section if taxonomies present
-        if '[taxonomies]' in frontmatter:
-            warnings.append(f"{file_path}: Using [taxonomies] - consider moving to [extra] for Goyo theme")
+        # It's OK to have both if they match (date is used for Zola sorting, start_date for display)
+        if has_date_field and has_start_date_field:
+            date_value = has_date_field.group(1)
+            start_date_value = has_start_date_field.group(1)
+            if date_value != start_date_value:
+                warnings.append(f"{file_path}: 'date' and 'start_date' have different values - ensure they match for consistency")
         
-        # Check for required fields in event pages
-        if '/events/' in str(file_path) and 'docker' not in str(file_path).lower():
-            required = ['title', 'description', 'date']
+        # Check for tags in wrong section (common mistake)
+        if '[extra]' in frontmatter and 'tags =' in frontmatter:
+            # Check if tags appear after [extra] but before [taxonomies]
+            extra_pos = frontmatter.find('[extra]')
+            taxonomies_pos = frontmatter.find('[taxonomies]')
+            tags_pos = frontmatter.find('tags =')
+            
+            if taxonomies_pos == -1:
+                # No [taxonomies] section - tags might be in [extra]
+                if tags_pos > extra_pos:
+                    errors.append(f"{file_path}: Tags found in [extra] section - should be in [taxonomies] for filtering to work")
+            elif tags_pos > extra_pos and tags_pos < taxonomies_pos:
+                errors.append(f"{file_path}: Tags found in [extra] section - should be in [taxonomies]")
+        
+        # Check for required fields in blog posts
+        if '/blog/' in str(file_path) and '_index.md' not in str(file_path):
+            required = ['title', 'date', 'description']
             for field in required:
                 if f'{field} =' not in frontmatter:
                     errors.append(f"{file_path}: Missing required field '{field}'")
+            
+            # Recommend using [taxonomies] for tags
+            if 'tags =' in frontmatter and '[taxonomies]' not in frontmatter:
+                warnings.append(f"{file_path}: Consider adding [taxonomies] section for tags to enable filtering")
+        
+        # Check for required fields in event pages
+        if '/events/' in str(file_path) and '_index.md' not in str(file_path):
+            required = ['title', 'description']
+            for field in required:
+                if f'{field} =' not in frontmatter:
+                    errors.append(f"{file_path}: Missing required field '{field}'")
+            
+            # Events must have either 'date' or 'start_date'
+            import re
+            has_date = re.search(r'\bdate\s*=', frontmatter)
+            has_start_date = re.search(r'\bstart_date\s*=', frontmatter)
+            
+            if not has_date and not has_start_date:
+                errors.append(f"{file_path}: Missing date field (use either 'date' or 'start_date'/'end_date')")
     
     except FileNotFoundError:
         errors.append(f"{file_path}: File not found")
@@ -136,6 +188,23 @@ def main():
                 print(f"  ✅ {md_file.relative_to(base_path)}")
     else:
         all_errors.append("content/events/ directory not found")
+    
+    print()
+    
+    # Validate blog posts
+    print("📝 Validating Blog Posts...")
+    blog_dir = base_path / 'content' / 'blog'
+    if blog_dir.exists():
+        for md_file in blog_dir.rglob('*.md'):
+            if md_file.name == '_index.md':
+                continue
+            errors, warnings = validate_frontmatter(md_file)
+            all_errors.extend(errors)
+            all_warnings.extend(warnings)
+            if not errors and not warnings:
+                print(f"  ✅ {md_file.relative_to(base_path)}")
+    else:
+        all_errors.append("content/blog/ directory not found")
     
     print()
     
