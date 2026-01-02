@@ -12,7 +12,7 @@ author = "Vikram Reddy"
 author_role = "4th Year CSE, DevOps Team"
 author_github = "vikram-devops"
 author_linkedin = "vikram-reddy-devops"
-cover_image = "/images/blog/docker-tutorial.jpg"
+cover_image = "blog/docker-tutorial.jpg"
 reading_time = 14
 featured = false
 +++

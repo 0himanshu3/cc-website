@@ -182,7 +182,7 @@
                     <div class="avatar {% if not person.image %}placeholder{% endif %}">
                         <div class="w-20 h-20 rounded-full {% if not person.image %}bg-neutral text-neutral-content{% endif %}">
                             {% if person.image %}
-                                <img src="{{ get_url(path=person.image) }}" alt="{{ person.name }}" />
+                                <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ person.image) }}" alt="{{ person.name }}" />
                             {% else %}
                                 <span class="text-2xl">{{ person.name | split(pat=' ') | first | slice(end=1) }}</span>
                             {% endif %}

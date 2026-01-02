@@ -12,7 +12,7 @@ stories:
       github: "ananya-dev"
       year: "2nd Year"
       branch: "CSE"
-      photo: "images/contrihub/2025/ananya-sharma.jpg"
+      photo: "contrihub/2025/ananya-sharma.jpg"
       linkedin: "https://linkedin.com/in/ananya-sharma"
     
     title: "From 'Git Scared' to 8 Merged PRs"
@@ -54,7 +54,7 @@ stories:
       github: "rohit-newbie"
       year: "1st Year"
       branch: "Mechanical Engineering"
-      photo: "images/contrihub/2025/rohit-kumar.jpg"
+      photo: "contrihub/2025/rohit-kumar.jpg"
       linkedin: "https://linkedin.com/in/rohit-kumar"
     
     title: "A Mechanical Engineer's Journey into Code"
@@ -96,7 +96,7 @@ stories:
       github: "priya-impact"
       year: "4th Year"
       branch: "CSE"
-      photo: "images/contrihub/2025/priya-agarwal.jpg"
+      photo: "contrihub/2025/priya-agarwal.jpg"
       linkedin: "https://linkedin.com/in/priya-agarwal"
     
     title: "Building Real-time Features That Matter"
@@ -140,7 +140,7 @@ stories:
       github: "meera-docs"
       year: "2nd Year"
       branch: "IT"
-      photo: "images/contrihub/2025/meera-nair.jpg"
+      photo: "contrihub/2025/meera-nair.jpg"
       linkedin: "https://linkedin.com/in/meera-nair"
     
     title: "Why Documentation Is Real Engineering"
@@ -184,7 +184,7 @@ stories:
       github: "rohan-mentor"
       year: "4th Year"
       branch: "CSE"
-      photo: "images/contrihub/2025/rohan-kumar.jpg"
+      photo: "contrihub/2025/rohan-kumar.jpg"
       linkedin: "https://linkedin.com/in/rohan-kumar"
     
     title: "Building a Community, Not Just a Codebase"

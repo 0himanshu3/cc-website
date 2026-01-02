@@ -12,7 +12,7 @@ version = "2025"
 title = "Computer Coding Club"
 badge = "🚀 Learn, Build, and Grow Together"
 description = "Join a vibrant community of passionate coders, innovators, and tech enthusiasts. We organize workshops, hackathons, coding competitions, and contribute to open source projects that make a difference."
-image = "/images/hero-background.jpg"
+image = "hero-background.jpg"
 cta_buttons = [
     { text = "Join Us", url = "/about", style = "primary" },
     { text = "Explore Blog", url = "/blog", style = "secondary" },
@@ -57,9 +57,9 @@ icon = "fa-solid fa-code-branch"
 [extra.trust_section]
 title = "By the Numbers"
 logos = [
-    { src = "/images/stats/members-200.svg", alt = "200+ Active Members" },
-    { src = "/images/stats/events-50.svg", alt = "50+ Events Organized" },
-    { src = "/images/stats/projects-15.svg", alt = "15+ Open Source Projects" },
+    { src = "stats/members-200.svg", alt = "200+ Active Members" },
+    { src = "stats/events-50.svg", alt = "50+ Events Organized" },
+    { src = "stats/projects-15.svg", alt = "15+ Open Source Projects" },
 ]
 
 # Showcase Section - Highlight different aspects
@@ -71,25 +71,25 @@ subtitle = "Explore our community, events, and impact"
 name = "Community"
 title = "Vibrant Tech Community"
 description = "Join 200+ students passionate about technology. From beginners to advanced developers, everyone finds their place in our inclusive community."
-image = "/images/showcase/community.jpg"
+image = "showcase/community.jpg"
 
 [[extra.showcase_section.tabs]]
 name = "Events"
 title = "Exciting Events Year-Round"
 description = "Hackathons, workshops, guest lectures, and meetups. We organize 50+ events annually covering the latest in tech."
-image = "/images/showcase/events.jpg"
+image = "showcase/events.jpg"
 
 [[extra.showcase_section.tabs]]
 name = "ContriHub"
 title = "ContriHub - Open Source Celebration"
 description = "Our flagship event where students make meaningful contributions to open source in a beginner-friendly, supportive environment."
-image = "/images/showcase/contrihub.jpg"
+image = "showcase/contrihub.jpg"
 
 [[extra.showcase_section.tabs]]
 name = "Learning"
 title = "Structured Learning Paths"
 description = "Follow curated roadmaps for web development, DSA, machine learning, and more. Learn at your own pace with community support."
-image = "/images/showcase/learning.jpg"
+image = "showcase/learning.jpg"
 
 # Social Proof Section - Testimonials from members and alumni
 [extra.social_proof_section]
@@ -99,26 +99,26 @@ title = "What Our Members Say"
 author = "Priya Sharma"
 role = "Software Engineer at Google | CC Club Alumni 2023"
 quote = "CC Club transformed my coding journey. From struggling with basic syntax to contributing to major open source projects - the supportive community made all the difference."
-avatar = "/images/testimonials/priya.jpg"
+avatar = "testimonials/priya.jpg"
 
 [[extra.social_proof_section.testimonials]]
 author = "Rahul Verma"
 role = "SDE at Amazon | CC Club President 2022"
 quote = "Leading CC Club was the best decision of my college life. The skills I learned in organizing events and mentoring juniors helped me land my dream job."
-avatar = "/images/testimonials/rahul.jpg"
+avatar = "testimonials/rahul.jpg"
 
 [[extra.social_proof_section.testimonials]]
 author = "Ananya Gupta"
 role = "ML Engineer at Microsoft | ContriHub Participant 2024"
 quote = "ContriHub gave me the confidence to contribute to open source. Now I'm a maintainer of two popular Python libraries!"
-avatar = "/images/testimonials/ananya.jpg"
+avatar = "testimonials/ananya.jpg"
 
 # Final CTA Section - Encourage action
 [extra.final_cta_section]
 title = "Ready to Level Up Your Skills?"
 description = "Join Computer Coding Club today and become part of a community that will support your growth from day one. Whether you're a complete beginner or an experienced developer, there's a place for you here."
 button = { text = "Get Started", url = "/about" }
-image = "/images/cta-background.jpg"
+image = "cta-background.jpg"
 +++
 
 <!-- 

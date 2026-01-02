@@ -12,7 +12,7 @@ author = "Karthik Nair"
 author_role = "Final Year IT, Mobile Dev"
 author_github = "karthik-mobile"
 author_linkedin = "karthik-nair-dev"
-cover_image = "/images/blog/pwa-guide.jpg"
+cover_image = "blog/pwa-guide.jpg"
 reading_time = 13
 featured = true
 +++

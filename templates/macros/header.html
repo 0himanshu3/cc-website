@@ -52,14 +52,14 @@
                 {% set light_logo_src = logo_light_image_path %}
                 {% if light_logo_src == "" %}{% set light_logo_src = logo_image_path %}{% endif %}
                 <img 
-                    src="{{ get_url(path=dark_logo_src) | safe }}" 
+                    src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ dark_logo_src) }}" 
                     alt="{{ logo_text }}" 
                     class="h-18 w-auto logo-dark"
                     data-logo-type="dark"
                     {% if logo_image_padding != "" %}style="padding: {{ logo_image_padding }};"{% endif %}
                 />
                 <img 
-                    src="{{ get_url(path=light_logo_src) | safe }}" 
+                    src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ light_logo_src) }}" 
                     alt="{{ logo_text }}" 
                     class="h-18 w-auto logo-light hidden"
                     data-logo-type="light"
@@ -67,7 +67,7 @@
                 />
             {% elif logo_image_path != "" %}
                 <img 
-                    src="{{ get_url(path=logo_image_path) | safe }}" 
+                    src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ logo_image_path) }}" 
                     alt="{{ logo_text }}" 
                     class="h-18 w-auto"
                     {% if logo_image_padding != "" %}style="padding: {{ logo_image_padding }};"{% endif %}

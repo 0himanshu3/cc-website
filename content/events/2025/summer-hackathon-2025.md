@@ -14,12 +14,12 @@ venue = "Main Auditorium & Computer Labs"
 participants = 150
 teams = 30
 
-poster = "/images/events/summer-hackathon-2025-poster.jpg"
+poster = "events/summer-hackathon-2025-poster.jpg"
 photo_gallery = [
-    "/images/events/summer-hackathon-2025-opening.jpg",
-    "/images/events/summer-hackathon-2025-coding.jpg",
-    "/images/events/summer-hackathon-2025-presentations.jpg",
-    "/images/events/summer-hackathon-2025-winners.jpg"
+    "events/summer-hackathon-2025-opening.jpg",
+    "events/summer-hackathon-2025-coding.jpg",
+    "events/summer-hackathon-2025-presentations.jpg",
+    "events/summer-hackathon-2025-winners.jpg"
 ]
 
 winners = [

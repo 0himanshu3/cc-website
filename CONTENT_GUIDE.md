@@ -76,7 +76,7 @@ author_linkedin = "yourlinkedin"
 reading_time = 5  # minutes
 featured = false
 badge = "NEW"
-cover_image = "/images/blog/your-post.jpg"
+cover_image = "blog/your-post.jpg"
 +++
 
 Your content here in Markdown...
@@ -95,7 +95,7 @@ print("Hello World")
 
 **Images in posts:**
 ```markdown
-![Alt text](/images/blog/2025/your-image.jpg)
+{{ image(src="blog/2025/your-image.jpg", alt="Alt text") }}
 ```
 
 ### Events

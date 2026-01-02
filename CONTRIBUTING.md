@@ -86,7 +86,7 @@ author_linkedin = "yourlinkedin"
 reading_time = 8
 featured = false
 badge = "NEW"
-cover_image = "/images/blog/your-post.jpg"
+cover_image = "blog/your-post.jpg"
 +++
 
 # Introduction
@@ -104,7 +104,7 @@ Wrap up your post...
 
 3. **Add images** (if needed):
    - Place images in `static/images/blog/2025/`
-   - Reference in markdown: `![Alt text](/images/blog/2025/your-image.jpg)`
+   - Reference in markdown: `{{ image(src="blog/2025/your-image.jpg", alt="Alt text") }}`
 
 4. **Preview your post**:
    - If you have Zola installed: `zola serve`

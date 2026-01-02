@@ -18,24 +18,24 @@ projects:
   - title: "Library Management System"
     description: "Automated system for college library book tracking."
     tags: ["Java", "MySQL", "JSP"]
-    image: "/images/projects/library-sys.jpg"
+    image: "projects/library-sys.jpg"
     link: "#"
   - title: "Student Portfolio Generator"
     description: "Web app to generate professional portfolios for students."
     tags: ["React", "Node.js", "MongoDB"]
-    image: "/images/projects/portfolio-gen.jpg"
+    image: "projects/portfolio-gen.jpg"
     link: "#"
 
 events:
   - title: "Winter Code Fest 2024"
     date: "Feb 10, 2024"
     description: "Annual coding festival with competitive programming and debugging contests."
-    image: "/images/events/code-fest-2024.jpg"
+    image: "events/code-fest-2024.jpg"
     url: "/events/2024/winter-code-fest"
   - title: "Intro to AI Workshop"
     date: "Mar 15, 2024"
     description: "A beginner-friendly workshop introducing concepts of Artificial Intelligence and Machine Learning."
-    image: "/images/events/ai-workshop.jpg"
+    image: "events/ai-workshop.jpg"
     url: "/events/2024/intro-to-ai"
 
 initiatives:

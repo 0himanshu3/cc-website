@@ -29,7 +29,7 @@ author_linkedin = "arjun-sharma-dev"
 # Cover image for social media sharing and post preview
 # Place image in static/images/blog/
 # TODO: Add your cover image
-cover_image = "/images/blog/react-hooks-guide.jpg"
+cover_image = "blog/react-hooks-guide.jpg"
 
 # Estimated reading time (in minutes)
 # Can be auto-calculated, but manual is more accurate

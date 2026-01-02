@@ -14,7 +14,7 @@ featured_contributions:
     contributor:
       name: "Arjun Sharma"
       github: "arjun-impact"
-      avatar: "images/contrihub/2025/arjun-sharma.jpg"
+      avatar: "contrihub/2025/arjun-sharma.jpg"
     repository: "cc-website"
     pr_number: 42
     pr_url: "https://github.com/ccc-lnmiit/cc-website/pull/42"
@@ -28,7 +28,7 @@ featured_contributions:
       - "JavaScript"
       - "YAML Data"
       - "CSS Grid"
-    image: "images/contrihub/2025/featured/alumni-search.png"
+    image: "contrihub/2025/featured/alumni-search.png"
     date: "2025-01-15"
     difficulty: "Intermediate"
 
@@ -37,7 +37,7 @@ featured_contributions:
     contributor:
       name: "Karan Mehta"
       github: "karan-features"
-      avatar: "images/contrihub/2025/karan-mehta.jpg"
+      avatar: "contrihub/2025/karan-mehta.jpg"
     repository: "event-manager"
     pr_number: 28
     pr_url: "https://github.com/ccc-lnmiit/event-manager/pull/28"
@@ -51,7 +51,7 @@ featured_contributions:
       - "Python"
       - "Flask"
       - "QR Code Library"
-    image: "images/contrihub/2025/featured/qr-checkin.png"
+    image: "contrihub/2025/featured/qr-checkin.png"
     date: "2025-01-20"
     difficulty: "Intermediate"
 
@@ -60,7 +60,7 @@ featured_contributions:
     contributor:
       name: "Priya Agarwal"
       github: "priya-impact"
-      avatar: "images/contrihub/2025/priya-agarwal.jpg"
+      avatar: "contrihub/2025/priya-agarwal.jpg"
     repository: "cc-website"
     pr_number: 56
     pr_url: "https://github.com/ccc-lnmiit/cc-website/pull/56"
@@ -74,7 +74,7 @@ featured_contributions:
       - "WebSocket"
       - "Redis"
       - "Node.js"
-    image: "images/contrihub/2025/featured/notifications.png"
+    image: "contrihub/2025/featured/notifications.png"
     date: "2025-01-25"
     difficulty: "Advanced"
 
@@ -85,7 +85,7 @@ featured_contributions:
     contributor:
       name: "Vikram Patel"
       github: "vikram-codes"
-      avatar: "images/contrihub/2025/vikram-patel.jpg"
+      avatar: "contrihub/2025/vikram-patel.jpg"
     repository: "cc-website"
     pr_number: 34
     pr_url: "https://github.com/ccc-lnmiit/cc-website/pull/34"
@@ -99,7 +99,7 @@ featured_contributions:
       - "JavaScript"
       - "Browser DevTools"
       - "Performance API"
-    image: "images/contrihub/2025/featured/memory-fix.png"
+    image: "contrihub/2025/featured/memory-fix.png"
     date: "2025-01-10"
     difficulty: "Advanced"
 
@@ -108,7 +108,7 @@ featured_contributions:
     contributor:
       name: "Ananya Sharma"
       github: "ananya-dev"
-      avatar: "images/contrihub/2025/ananya-sharma.jpg"
+      avatar: "contrihub/2025/ananya-sharma.jpg"
     repository: "cc-website"
     pr_number: 38
     pr_url: "https://github.com/ccc-lnmiit/cc-website/pull/38"
@@ -122,7 +122,7 @@ featured_contributions:
       - "CSS"
       - "Media Queries"
       - "Flexbox"
-    image: "images/contrihub/2025/featured/responsive-fix.png"
+    image: "contrihub/2025/featured/responsive-fix.png"
     date: "2025-01-12"
     difficulty: "Beginner"
 
@@ -133,7 +133,7 @@ featured_contributions:
     contributor:
       name: "Rahul Verma"
       github: "rahul-technical-writer"
-      avatar: "images/contrihub/2025/rahul-verma.jpg"
+      avatar: "contrihub/2025/rahul-verma.jpg"
     repository: "event-manager"
     pr_number: 45
     pr_url: "https://github.com/ccc-lnmiit/event-manager/pull/45"
@@ -147,7 +147,7 @@ featured_contributions:
       - "Markdown"
       - "Swagger/OpenAPI"
       - "Postman"
-    image: "images/contrihub/2025/featured/api-docs.png"
+    image: "contrihub/2025/featured/api-docs.png"
     date: "2025-01-18"
     difficulty: "Intermediate"
 
@@ -156,7 +156,7 @@ featured_contributions:
     contributor:
       name: "Meera Nair"
       github: "meera-docs"
-      avatar: "images/contrihub/2025/meera-nair.jpg"
+      avatar: "contrihub/2025/meera-nair.jpg"
     repository: "cc-website"
     pr_number: 31
     pr_url: "https://github.com/ccc-lnmiit/cc-website/pull/31"
@@ -170,7 +170,7 @@ featured_contributions:
       - "Markdown"
       - "Shell Scripts"
       - "Video Editing"
-    image: "images/contrihub/2025/featured/setup-guide.png"
+    image: "contrihub/2025/featured/setup-guide.png"
     date: "2025-01-08"
     difficulty: "Beginner"
 
@@ -179,7 +179,7 @@ featured_contributions:
     contributor:
       name: "Anjali Kapoor"
       github: "anjali-docs"
-      avatar: "images/contrihub/2025/anjali-kapoor.jpg"
+      avatar: "contrihub/2025/anjali-kapoor.jpg"
     repository: "dsa-practice"
     pr_number: 67
     pr_url: "https://github.com/ccc-lnmiit/dsa-practice/pull/67"
@@ -193,7 +193,7 @@ featured_contributions:
       - "Markdown"
       - "Mermaid Diagrams"
       - "Python"
-    image: "images/contrihub/2025/featured/dsa-explanations.png"
+    image: "contrihub/2025/featured/dsa-explanations.png"
     date: "2025-01-22"
     difficulty: "Intermediate"
 
@@ -204,7 +204,7 @@ featured_contributions:
     contributor:
       name: "Divya Singh"
       github: "divya-automation"
-      avatar: "images/contrihub/2025/divya-singh.jpg"
+      avatar: "contrihub/2025/divya-singh.jpg"
     repository: "event-manager"
     pr_number: 52
     pr_url: "https://github.com/ccc-lnmiit/event-manager/pull/52"
@@ -218,7 +218,7 @@ featured_contributions:
       - "Python"
       - "Pillow"
       - "SMTP"
-    image: "images/contrihub/2025/featured/certificate-automation.png"
+    image: "contrihub/2025/featured/certificate-automation.png"
     date: "2025-01-28"
     difficulty: "Intermediate"
 
@@ -227,7 +227,7 @@ featured_contributions:
     contributor:
       name: "Rohit Kumar"
       github: "rohit-newbie"
-      avatar: "images/contrihub/2025/rohit-kumar.jpg"
+      avatar: "contrihub/2025/rohit-kumar.jpg"
     repository: "event-manager"
     pr_number: 39
     pr_url: "https://github.com/ccc-lnmiit/event-manager/pull/39"
@@ -241,7 +241,7 @@ featured_contributions:
       - "Python"
       - "Pandas"
       - "JSON"
-    image: "images/contrihub/2025/featured/data-migration.png"
+    image: "contrihub/2025/featured/data-migration.png"
     date: "2025-01-14"
     difficulty: "Intermediate"
 
@@ -252,7 +252,7 @@ featured_contributions:
     contributor:
       name: "Siddharth Sharma"
       github: "siddharth-quality"
-      avatar: "images/contrihub/2025/siddharth-sharma.jpg"
+      avatar: "contrihub/2025/siddharth-sharma.jpg"
     repository: "event-manager"
     pr_number: 61
     pr_url: "https://github.com/ccc-lnmiit/event-manager/pull/61"
@@ -266,7 +266,7 @@ featured_contributions:
       - "Jest"
       - "Pytest"
       - "Selenium"
-    image: "images/contrihub/2025/featured/test-coverage.png"
+    image: "contrihub/2025/featured/test-coverage.png"
     date: "2025-01-30"
     difficulty: "Advanced"
 
@@ -275,7 +275,7 @@ featured_contributions:
     contributor:
       name: "Nisha Gupta"
       github: "nisha-clean-code"
-      avatar: "images/contrihub/2025/nisha-gupta.jpg"
+      avatar: "contrihub/2025/nisha-gupta.jpg"
     repository: "event-manager"
     pr_number: 48
     pr_url: "https://github.com/ccc-lnmiit/event-manager/pull/48"
@@ -289,7 +289,7 @@ featured_contributions:
       - "Python"
       - "Design Patterns"
       - "Type Hints"
-    image: "images/contrihub/2025/featured/code-refactoring.png"
+    image: "contrihub/2025/featured/code-refactoring.png"
     date: "2025-01-26"
     difficulty: "Advanced"
 

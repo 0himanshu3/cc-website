@@ -21,7 +21,7 @@ capacity = 50
 seats_remaining = 18
 
 contact_email = "workshops@ccclub.edu"
-poster = "/images/events/docker-kubernetes-workshop.jpg"
+poster = "events/docker-kubernetes-workshop.jpg"
 
 # Workshop materials
 prerequisites = ["Basic command line knowledge", "Laptop with Docker installed"]

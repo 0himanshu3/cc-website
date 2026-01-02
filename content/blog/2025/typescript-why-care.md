@@ -12,7 +12,7 @@ author = "Anjali Verma"
 author_role = "3rd Year CSE, Full Stack Developer"
 author_github = "anjali-fullstack"
 author_linkedin = "anjali-verma-dev"
-cover_image = "/images/blog/typescript-guide.jpg"
+cover_image = "blog/typescript-guide.jpg"
 reading_time = 11
 +++
 

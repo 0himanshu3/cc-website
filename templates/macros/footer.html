@@ -10,7 +10,7 @@
                 <div class="footer-col space-y-4">
                     <div class="footer-logo-container">
                         {% if config.extra.footer_logo %}
-                        <img src="{{ config.extra.footer_logo }}" alt="Logo" class="footer-logo">
+                        <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ config.extra.footer_logo) }}" alt="Logo" class="footer-logo">
                         {% endif %}
                         <h3>
                             {{ config.extra.footer_title | default(value=config.title) }}

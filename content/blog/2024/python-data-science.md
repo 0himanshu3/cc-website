@@ -12,7 +12,7 @@ author = "Ankit Sharma"
 author_role = "Alumni 2024, Data Scientist at TCS"
 author_github = "ankit-ds"
 author_linkedin = "ankit-sharma-ds"
-cover_image = "/images/blog/python-data-science.jpg"
+cover_image = "blog/python-data-science.jpg"
 reading_time = 11
 +++
 

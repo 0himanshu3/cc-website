@@ -18,29 +18,29 @@ projects:
   - title: "Campus Connect App"
     description: "A mobile application to connect students with alumni and mentors."
     tags: ["Flutter", "Firebase", "Node.js"]
-    image: "/images/projects/campus-connect.jpg"
+    image: "projects/campus-connect.jpg"
     link: "#"
   - title: "AI Study Assistant"
     description: "An AI-powered tool to help students organize their study schedules."
     tags: ["Python", "TensorFlow", "React"]
-    image: "/images/projects/ai-assistant.jpg"
+    image: "projects/ai-assistant.jpg"
     link: "#"
   - title: "Green Campus Initiative"
     description: "IoT based system to monitor and optimize energy consumption in campus labs."
     tags: ["IoT", "Arduino", "C++"]
-    image: "/images/projects/green-campus.jpg"
+    image: "projects/green-campus.jpg"
     link: "#"
 
 events:
   - title: "Winter Hackathon 2025"
     date: "Jan 15, 2025"
     description: "A 48-hour coding marathon focused on solving real-world problems."
-    image: "/images/events/hackathon-2025.jpg"
+    image: "events/hackathon-2025.jpg"
     url: "/events/2025/winter-hackathon-2025"
   - title: "Summer Hackathon 2025"
     date: "Jun 20, 2025"
     description: "Annual summer coding competition with tracks in AI, Web3, and Cloud."
-    image: "/images/events/summer-hackathon.jpg"
+    image: "events/summer-hackathon.jpg"
     url: "/events/2025/summer-hackathon-2025"
 
 initiatives:

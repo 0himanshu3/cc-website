@@ -159,7 +159,7 @@ Most content updates require **only editing Markdown or YAML files** - no coding
    ```yaml
    - name: "Your Name"
      role: "Your Role"
-     image: "/images/team/yourname.jpg"
+     image: "team/yourname.jpg"
      bio: "Short bio"
      linkedin: "https://linkedin.com/in/yourname"
      github: "https://github.com/yourname"
@@ -178,7 +178,7 @@ Most content updates require **only editing Markdown or YAML files** - no coding
      company: "Company Name"
      domain: "Backend Development"
      location: "City, Country"
-     image: "/images/alumni/yourname.jpg"
+     image: "alumni/yourname.jpg"
      linkedin: "https://linkedin.com/in/yourname"
      github: "https://github.com/yourname"
      message: "Optional advice for juniors"
@@ -219,7 +219,7 @@ disable_toggle = false         # Hide theme toggle
 
 [extra.logo]
 text = "CC Club"
-image_path = "images/logo.png" # Add your logo
+image_path = "logo.png" # Add your logo (place in static/images/)
 
 [extra.sidebar]
 expand_depth = 2               # Sidebar auto-expansion depth

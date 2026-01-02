@@ -12,7 +12,7 @@ author = "Pradeep Singh"
 author_role = "Alumni 2024, DevOps Engineer at Amazon"
 author_github = "pradeep-devops"
 author_linkedin = "pradeep-singh-devops"
-cover_image = "/images/blog/linux-commands.jpg"
+cover_image = "blog/linux-commands.jpg"
 reading_time = 12
 badge = "Essential"
 +++

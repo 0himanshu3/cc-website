@@ -8,7 +8,7 @@
             <figure class="px-6 pt-6">
                 <div class="avatar">
                     <div class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                        <img src="{{ member.image | default(value='/images/default-avatar.png') }}" alt="{{ member.name }}" />
+                        <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ member.image | default(value='default-avatar.png')) }}" alt="{{ member.name }}" />
                     </div>
                 </div>
             </figure>
@@ -38,7 +38,7 @@
             <figure class="px-6 pt-6">
                 <div class="avatar">
                     <div class="w-24 rounded-full ring ring-secondary ring-offset-base-100 ring-offset-2">
-                        <img src="{{ member.image | default(value='/images/default-avatar.png') }}" alt="{{ member.name }}" />
+                        <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ member.image | default(value='default-avatar.png')) }}" alt="{{ member.name }}" />
                     </div>
                 </div>
             </figure>
@@ -68,7 +68,7 @@
             <figure class="px-6 pt-6">
                 <div class="avatar">
                     <div class="w-24 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2">
-                        <img src="{{ member.image | default(value='/images/default-avatar.png') }}" alt="{{ member.name }}" />
+                        <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ member.image | default(value='default-avatar.png')) }}" alt="{{ member.name }}" />
                     </div>
                 </div>
             </figure>
