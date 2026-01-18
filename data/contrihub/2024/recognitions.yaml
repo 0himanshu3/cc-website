@@ -1,8 +1,0 @@
-recognitions:
-  - category: "Top Maintainers"
-    icon: "🛡️"
-    description: "Guardians of the codebase"
-    recipients:
-      - name: "Rohan Gupta"
-        github: "rohan-g"
-        year: "3rd Year"

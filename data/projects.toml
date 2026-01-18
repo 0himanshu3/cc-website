@@ -1,0 +1,32 @@
+# Projects Data File
+# Schema:
+# - title: Project name (string)
+# - description: Brief description (string)
+# - icon: FontAwesome icon class (string)
+# - tech_stack: Array of technologies used (strings)
+# - repo_url: GitHub repository URL (string)
+# - authors: Array of GitHub usernames (strings)
+
+[[projects]]
+title = "CC Website"
+description = "The official website for the Computer Coding Club, built with Zola and Tailwind CSS. Features a custom theme, event management, and resource sharing."
+icon = "fa-solid fa-globe"
+tech_stack = ["Zola", "Tailwind CSS", "Rust"]
+repo_url = "https://github.com/cc-mnnit/cc-website"
+authors = ["shanu-kumawat", "contributor2"]
+
+[[projects]]
+title = "Algoverse"
+description = "A comprehensive library of algorithms and data structures implemented in C++, Java, and Python. Designed for competitive programming preparation."
+icon = "fa-solid fa-brain"
+tech_stack = ["C++", "Python", "Algorithms"]
+repo_url = "https://github.com/cc-mnnit/algoverse"
+authors = ["algo-expert", "cp-master"]
+
+[[projects]]
+title = "Campus Connect"
+description = "A mobile application to bridge the gap between students and administration. Features real-time notices, event updates, and a grievance redressal system."
+icon = "fa-solid fa-mobile-screen"
+tech_stack = ["Flutter", "Firebase", "Dart"]
+repo_url = "https://github.com/cc-mnnit/campus-connect"
+authors = ["app-dev-lead", "ui-designer"]
