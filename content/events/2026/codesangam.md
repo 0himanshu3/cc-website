@@ -15,9 +15,9 @@ participants = 300
 prize_pool = "Rs. 75,000"
 
 images = [
-    "/images/events/codesangam/1.svg",
-    "/images/events/codesangam/2.svg",
-    "/images/events/codesangam/3.svg"
+    "events/codesangam/1.svg",
+    "events/codesangam/2.svg",
+    "events/codesangam/3.svg"
 ]
 +++
 

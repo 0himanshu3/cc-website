@@ -20,7 +20,8 @@
         {# Background #}
         <div class="event-hero-bg">
             {% if page.extra.images %}
-            <img src="{{ page.extra.images | first }}" alt="{{ page.title }}">
+            {% set first_image = page.extra.images | first %}
+            <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ first_image) }}" alt="{{ page.title }}">
             {% endif %}
             <div class="event-hero-overlay"></div>
         </div>
@@ -119,7 +120,7 @@
         <div class="gallery-grid">
             {% for image in page.extra.images %}
             <div class="gallery-item" data-index="{{ loop.index0 }}">
-                <img src="{{ image }}" alt="{{ page.title }} - Image {{ loop.index }}" loading="lazy">
+                <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ image) }}" alt="{{ page.title }} - Image {{ loop.index }}" loading="lazy">
                 <div class="gallery-item-overlay">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
                 </div>
@@ -151,7 +152,7 @@
                         {% endif %}
                     </div>
                     {% if winner.avatar %}
-                    <img src="{{ winner.avatar }}" alt="{{ winner.name }}" class="podium-avatar">
+                    <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ winner.avatar) }}" alt="{{ winner.name }}" class="podium-avatar">
                     {% else %}
                     <div class="podium-avatar-placeholder">
                         {{ winner.name | truncate(length=2, end="") | upper }}
@@ -181,7 +182,7 @@
                 <div class="winner-list-item">
                     <span class="winner-rank">#{{ loop.index }}</span>
                     {% if winner.avatar %}
-                    <img src="{{ winner.avatar }}" alt="{{ winner.name }}" class="winner-avatar">
+                    <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ winner.avatar) }}" alt="{{ winner.name }}" class="winner-avatar">
                     {% else %}
                     <div class="winner-avatar-placeholder">{{ winner.name | truncate(length=2, end="") | upper }}</div>
                     {% endif %}
@@ -217,7 +218,7 @@
                 {# Project Image #}
                 {% if project.image %}
                 <div class="project-card-image">
-                    <img src="{{ project.image }}" alt="{{ project.name }}" loading="lazy">
+                    <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ project.image) }}" alt="{{ project.name }}" loading="lazy">
                 </div>
                 {% endif %}
 

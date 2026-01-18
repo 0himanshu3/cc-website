@@ -135,7 +135,8 @@
                 {# Card Image #}
                 <div class="event-card-visual">
                     {% if event.extra.images %}
-                    <img src="{{ event.extra.images | first }}" alt="{{ event.title }}" loading="lazy">
+                    {% set first_image = event.extra.images | first %}
+                    <img src="{{ get_url(path=config.extra.image_base_url ~ '/' ~ first_image) }}" alt="{{ event.title }}" loading="lazy">
                     {% endif %}
                     <div class="event-card-visual-overlay"></div>
 

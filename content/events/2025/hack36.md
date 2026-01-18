@@ -14,9 +14,9 @@ participants = 500
 prize_pool = "Rs. 2,00,000"
 
 images = [
-    "/images/events/hack36/1.svg",
-    "/images/events/hack36/2.svg",
-    "/images/events/hack36/3.svg"
+    "events/hack36/1.svg",
+    "events/hack36/2.svg",
+    "events/hack36/3.svg"
 ]
 
 # Winners
