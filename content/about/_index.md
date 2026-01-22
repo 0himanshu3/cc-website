@@ -1,6 +1,6 @@
 +++
-title = "About Computer Coding Club"
-description = "Passion | Hardwork | Life"
+title = "About Us"
+description = "Innovating since 2010"
 weight = 1
 template = "about.html"
 
