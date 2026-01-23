@@ -14,7 +14,7 @@ description = "Comprehensive blockchain bot detection system using ML and Pyth N
 icon = "fa-solid fa-shield-halved"
 tech_stack = ["Spring Boot", "React", "Solidity"]
 repo_url = "https://github.com/samudraneel05/Blackjack"
-authors = ["samudraneel05"]
+authors = ["samudraneel05","Shanu-Kumawat","therev2","UditanshSri"]
 
 [[projects]]
 title = "Obliviate"
@@ -38,7 +38,7 @@ description = "Visual infrastructure design tool with drag-and-drop interface. A
 icon = "fa-solid fa-diagram-project"
 tech_stack = ["Next.js", "TypeScript", "React Flow"]
 repo_url = "https://github.com/MrinalVarshney/InfraSketch-"
-authors = ["MrinalVarshney"]
+authors = ["MrinalVarshney","Shivansh-243","manish-bhukar","im0vishal"]
 
 [[projects]]
 title = "Sushrut"
@@ -54,7 +54,7 @@ description = "Android platform for efficient college club communication and col
 icon = "fa-solid fa-users"
 tech_stack = ["Kotlin", "Jetpack Compose", "Firebase"]
 repo_url = "https://github.com/CC-MNNIT/MotiClubs"
-authors = ["shank03", "hackeramitkumar"]
+authors = ["shank03", "hackeramitkumar","mitrukahitesh","ShrutisLegion","yashakabra"]
 
 [[projects]]
 title = "CodeSangam"
@@ -62,4 +62,4 @@ description = "Event management platform for coding competitions including Droid
 icon = "fa-solid fa-code"
 tech_stack = ["Go", "React", "TypeScript"]
 repo_url = "https://github.com/CC-MNNIT/CodeSangam"
-authors = ["shank03", "PriyavKaneria", "sanskaromar"]
+authors = ["shank03", "PriyavKaneria", "sanskaromar","Ayushman444","imsubratpandey","tan-inv","lokesh-wagh","smt96700","meisabhishekpatel"]

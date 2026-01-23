@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="card-footer">
-                    <div class="avatar-stack">
+                    <div class="avatar-stack {% if project.authors | length > 4 %}avatar-stack-many{% endif %}">
                         {% for author in project.authors %}
                         <div class="avatar-wrapper" title="{{ author }}">
                             <img src="https://github.com/{{ author }}.png" alt="{{ author }}" class="avatar-img">
