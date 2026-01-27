@@ -13,22 +13,22 @@ external_link = "https://www.hack36.in/"
 location = "MNNIT Allahabad"
 participants = 600
 prize_pool = "Rs. 1,00,000"
-banner_image = "images/events/2025/hack36/6.jpg"
+banner_image = "images/events/2025/hack36/7.webp"
 show_banner = true
 
 # --- Event Images ---
 images = [
-    "events/2025/hack36/1.jpg",
-    "events/2025/hack36/2.png",
-    "events/2025/hack36/3.png",
-    "events/2025/hack36/4.png",
-    "events/2025/hack36/5.jpg",
-    "events/2025/hack36/6.jpg",
-    "events/2025/hack36/7.jpg",
-    "events/2025/hack36/8.jpg",
-    "events/2025/hack36/9.jpg",
-    "events/2025/hack36/10.jpg",
-    "events/2025/hack36/11.jpg"
+    "events/2025/hack36/1.webp",
+    "events/2025/hack36/2.webp",
+    "events/2025/hack36/3.webp",
+    "events/2025/hack36/4.webp",
+    "events/2025/hack36/5.webp",
+    "events/2025/hack36/6.webp",
+    "events/2025/hack36/7.webp",
+    "events/2025/hack36/8.webp",
+    "events/2025/hack36/9.webp",
+    "events/2025/hack36/10.webp",
+    "events/2025/hack36/11.webp"
 ]
 
 # --- Winners (The Podium) ---

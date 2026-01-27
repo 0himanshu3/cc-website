@@ -11,14 +11,14 @@ status = "completed"
 external_link = "https://codeforces.com/group/hUywLYmr80/blog/entry/17041"
 location = "MNNIT Allahabad"
 participants = "270+"
-banner_image = "images/events/2025/code-of-the-day/1.png"
+banner_image = "images/events/2025/code-of-the-day/1.webp"
 
 # --- Event Images ---
 images = [
-    "events/2025/code-of-the-day/1.png",
-    "events/2025/code-of-the-day/2.jpg",
-    "events/2025/code-of-the-day/3.jpg",
-    "events/2025/code-of-the-day/4.jpg"
+    "events/2025/code-of-the-day/1.webp",
+    "events/2025/code-of-the-day/2.webp",
+    "events/2025/code-of-the-day/3.webp",
+    "events/2025/code-of-the-day/4.webp"
 ]
 
 # --- Winners (The Podium) ---

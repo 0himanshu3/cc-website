@@ -13,14 +13,14 @@ badge = "FLAGSHIP"
 external_link = "https://codesangam2k25.devfolio.co/overview"
 location = "MNNIT Allahabad"
 participants = 500
-banner_image = "images/events/2025/codesangam/1.png"
+banner_image = "images/events/2025/codesangam/1.webp"
 show_banner = true
 
 # --- Event Images ---
 images = [
-    "events/2025/codesangam/1.png",
-    "events/2025/codesangam/2.png",
-    "events/2025/codesangam/3.jpg"
+    "events/2025/codesangam/1.webp",
+    "events/2025/codesangam/2.webp",
+    "events/2025/codesangam/3.webp"
 ]
 
 # --- Winners 

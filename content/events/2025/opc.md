@@ -11,12 +11,12 @@ status = "completed"
 external_link = "https://codeforces.com/group/hUywLYmr80/blog/entry/17218"
 location = "MNNIT Allahabad"
 participants = "240+"
-banner_image = "images/events/2025/opc/1.jpg"
+banner_image = "images/events/2025/opc/1.webp"
 
 # --- Event Images ---
 images = [
-    "events/2025/opc/2.png",
-    "events/2025/opc/3.png"
+    "events/2025/opc/2.webp",
+    "events/2025/opc/3.webp"
 ]
 
 # --- Winners (The Podium) ---

@@ -12,17 +12,17 @@ status = "completed"
 external_link = "https://woc.cc-club.in/"
 location = "MNNIT Allahabad"
 participants = 500
-banner_image = "images/events/2025/weekend-of-code/7.jpeg"
+banner_image = "images/events/2025/weekend-of-code/7.webp"
 
 # --- Event Images ---
 images = [
-    "events/2025/weekend-of-code/7.jpeg",
-    "events/2025/weekend-of-code/1.jpeg",
-    "events/2025/weekend-of-code/2.jpeg",
-    "events/2025/weekend-of-code/3.jpeg",
-    "events/2025/weekend-of-code/4.jpeg",
-    "events/2025/weekend-of-code/5.jpeg",
-    "events/2025/weekend-of-code/6.png"
+    "events/2025/weekend-of-code/7.webp",
+    "events/2025/weekend-of-code/1.webp",
+    "events/2025/weekend-of-code/2.webp",
+    "events/2025/weekend-of-code/3.webp",
+    "events/2025/weekend-of-code/4.webp",
+    "events/2025/weekend-of-code/5.webp",
+    "events/2025/weekend-of-code/6.webp"
 ]
 
 # --- Winners (The Podium) ---

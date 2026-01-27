@@ -11,12 +11,12 @@ badge = "LIVE"
 external_link = "#"
 location = "MNNIT Allahabad"
 participants = "500+"
-banner_image = "images/events/2026/weekend-of-code/banner.png"
+banner_image = "images/events/2026/weekend-of-code/banner.webp"
 show_banner = true
 
 # --- Event Images ---
 images = [
-    "events/2026/weekend-of-code/banner.png",
+    "events/2026/weekend-of-code/banner.webp",
 ]
 
 # --- Winners (The Podium) ---
