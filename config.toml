@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://CC-MNNIT.github.io/cc-website/"
+base_url = "https://cc-club.in/"
 
 # Site title - appears in browser tab and header
 title = "Computer Coding Club"
