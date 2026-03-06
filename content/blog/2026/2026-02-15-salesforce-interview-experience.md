@@ -22,7 +22,7 @@ A big chunk of the hiring at Salesforce at entry level happens through PPO conve
 
 1. {% badge_primary() %}On-campus{% end %} Salesforce visits MNNIT Allahabad for summer internship. The process involves an online round (OA) followed by 2 rounds of interview for each shortlisted candidate.
 
-2. {% badge_secondary() %}Off-campus{% end %} Salesforce often organizes a hackathon (usually called Tech Accelerator). To be aware of when these happen you can check out the {{ pretty_link(url="https://www.salesforce.com/company/careers/university/", title="FutureForce Page", description="Salesforce University Recruiting") }} or follow [FutureForce on Instagram](https://www.instagram.com/salesforcefutureforce/).
+2. {% badge_secondary() %}Off-campus{% end %} Salesforce often organizes a hackathon (usually called Tech Accelerator). To be aware of when these happen you can check out the [FutureForce Page]("https://www.salesforce.com/company/careers/university/") or follow [FutureForce on Instagram](https://www.instagram.com/salesforcefutureforce/).
 
    > Usually the process involves a resume based shortlisting for the hackathon after which the shortlisted candidates are invited to Salesforce Hyderabad Office for a hackathon. Interviews are conducted post hackathon and internships are awarded. If you get shortlisted for hackathon, there is a decent chance of qualifying for internships through this route.
 
@@ -32,11 +32,12 @@ A big chunk of the hiring at Salesforce at entry level happens through PPO conve
 
 The Salesforce online assessment is a timed challenge which is usually organized on HackerRank.
 
-- **Format:** 2-3 DSA questions only (No MCQs).
-- **Difficulty:** Leetcode Easy to Medium.
+- **Format:** 2-3 DSA questions only (No MCQs)
+- **Difficulty:** Generally Leetcode Medium
 
 {% alert_warning() %}
-**Topics:** Greedy, 2 Pointer, Binary Search.
+**Topics:** Greedy, Arrays, 2 Pointer, Binary Search.
+
 *Note: The topics may differ and are very hard to predict.*
 {% end %}
 
@@ -50,14 +51,15 @@ The candidates shortlisted for interview go through the first round which is a t
 > The development stack questions are fundamental in nature and can be answered easily if you made the project yourself.
 
 {% alert_info() %}
-**Pro Tip:** Your best chances are if you don't behave like a robot!
+**Pro Tip:** During problem solving, its very important to speak out your thought process and communicate with the interviewer, they are not there to be impressed by you solving it in 5 minutes rather they are mostly way more interested in your approach and ability to build a solution and also explain why you came up with it, so don't be a robot, speak.
 {% end %}
 
 One of the prime focus of the interviewers is on your ability to develop a solution and explain your reasoning.
 - Speak while you code.
-- Explain choices for data structures.
-- Discuss expected time complexity.
-- If you make a mistake, point it out and correct it.
+- Explain choices for data structures and trade-offs
+- Discuss expected time complexity while coding and also if you know more than one language you can touch upon how you would do things differently in this language 
+- If you make a mistake, its okay!! point it out yourself and correct it 
+- Confidence is the key to get the job
 
 #### Introduction
 
@@ -69,9 +71,9 @@ it should be **90%** about your skills, projects, CGPA, achievements and interes
 
 ### Interview (Round 2)
 
-Be ready to be asked the introduction you gave in Round 1. This is generally an **HR-Manager round**. managers try to test your culture fit/critical thinking. Expect puzzles and managerial questions.
+Be ready to be asked the introduction you gave in Round 1. This is generally an **HR-Manager round**. managers try to test your culture fit/critical thinking. Expect [puzzles](https://www.geeksforgeeks.org/aptitude/top-100-puzzles-asked-in-interviews/) and managerial questions.
 
-**Common Questions:**
+**Common Non Puzzle Questions:**
 1. Tell me about your weakness.
 2. What is your favorite subject?
 3. What are your greatest achievements?
@@ -83,22 +85,20 @@ You can say anything that initially sounds negative but adds more value to you.
 *Example:* "My weakness is that when I delve into a project I get so involved in it that I forget about food..."
 {% end %}
 
-### Conclusion
-
-So ultimately they will ask you: **"Are there any questions?"**
+A lot of times Managers would ask you: **"Are there any questions?"**
 
 {% alert_success() %}
 **This is the bingo moment!** You should always ask a question.
 {% end %}
 
-Read about the company, what are their latest products and what they are investing on.
+Generally its good to read about the company before HR round, what are their latest products and what they are investing on.
 
 {% collapse(title="Example Questions to Ask") %}
 1. "So sir, what is Agentforce all about and how is this revolutionizing the CRM Landscape?"
 2. "So, I heard trust is the number 1 value at Salesforce, how do developers transform into their daily work?"
 {% end %}
 
-> **Note:** Do not ask about work life balance or compensation. It puts you in a favorable position to ask company-oriented questions.
+> **Note:** Do not ask about work life balance or compensation. It puts you in a favorable position to ask company-oriented questions. WLB and Compensation for Salesforce is already good.
 
 ## My Internship Experience
 
@@ -121,8 +121,6 @@ I delivered two projects during my internship:
 
 ### Final Advice
 
-My mentor at Salesforce was from MNNIT Batch 2019 itself! Apart from that, the entire team was very approachable and so was the case with all other interns.
-
 {% alert_success() %}
 **Seek Help!**
 During internship don't stay stuck. Try things, but if they don't work out, don't waste days fixing it. You will learn a lot from your team's principal engineer and architects, because their perspective will teach you about developing a product from the lenses of the end-user.
@@ -132,4 +130,4 @@ PPO conversions are quite generous at Salesforce given you deliver the project o
 
 ## Best of Luck Dude :)
 
-![Internship at Salesforce](https://media.licdn.com/dms/image/v2/D5622AQEU3TTRenGE1g/feedshare-shrink_2048_1536/B56Zge3zEUH0As-/0/1752864607599?e=1772668800&v=beta&t=0Zfo5qoWKo8lqsFHLUeOGnnD-5Brbh53vJBJpJmGNb0)
+![Internship at Salesforce](https://media.licdn.com/dms/image/v2/D5622AQEU3TTRenGE1g/feedshare-shrink_1280/B56Zge3zEUH0Ao-/0/1752864607576?e=1774483200&v=beta&t=OflEajvSMwwRvPOZN3Uc1MW4BxvQONzRtQI-lvOP_OM)
